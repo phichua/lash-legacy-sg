@@ -1,291 +1,511 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Lash Legacy SG | Premium Lash &amp; Brow Studio</title>
-  <meta name="description" content="Lash Legacy SG — Singapore's trusted beauty studio for eyelash extensions, lash lifts, brow lamination and brow shaping. Book via Instagram @lashlegacysg." />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            rose: {
-              50: '#fff1f2',
-              100: '#ffe4e6',
-              200: '#fecdd3',
-              300: '#fda4af',
-              400: '#fb7185',
-              500: '#f43f5e',
-              600: '#e11d48',
-              700: '#be123c',
-              800: '#9f1239',
-              900: '#881337',
-              950: '#4c0519',
-            }
-          }
-        }
-      }
-    }
-  </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    body { font-family: 'Inter', system-ui, sans-serif; }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lash Legacy | Lash Extensions Designed to Fit You — Tanjong Pagar, Singapore</title>
+<meta name="description" content="Lash Legacy is a 4.9★-rated eyelash studio at International Plaza, Tanjong Pagar. Multi-layered lash design, classic & volume extensions, lash lifts and baby lips — every set designed to fit your eyes.">
+<link rel="canonical" href="https://phichua.github.io/lash-legacy-sg/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Lash Legacy — Lash Extensions Designed to Fit You">
+<meta property="og:description" content="4.9★ rated lash studio in Tanjong Pagar. Multi-layered lash design, classic & volume sets, lash lifts and baby lips. Book via WhatsApp.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1639629509821-c54cdd984227?auto=format&fit=crop&w=1200&q=80">
+<meta property="og:url" content="https://phichua.github.io/lash-legacy-sg/">
+<meta name="twitter:card" content="summary_large_image">
+
+<!-- Favicon: gold LL monogram -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230E0B09'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23C9A876' text-anchor='middle' font-style='italic'%3ELL%3C/text%3E%3C/svg%3E">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- LocalBusiness schema -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Lash Legacy",
+  "image": "https://images.unsplash.com/photo-1639629509821-c54cdd984227?auto=format&fit=crop&w=1200&q=80",
+  "url": "https://phichua.github.io/lash-legacy-sg/",
+  "telephone": "+6583121248",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "10 Anson Road, #02-74 International Plaza",
+    "addressLocality": "Singapore",
+    "postalCode": "079903",
+    "addressCountry": "SG"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": 1.2756998, "longitude": 103.8458098 },
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "53" },
+  "openingHoursSpecification": [
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "11:00", "closes": "21:00" },
+    { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "10:00", "closes": "19:00" }
+  ],
+  "sameAs": ["https://www.instagram.com/lashlegacysg/"]
+}
+</script>
+
+<style>
+:root{
+  --bg:#0E0B09;
+  --surface:#171210;
+  --surface-2:#201915;
+  --line:rgba(201,168,118,.16);
+  --ivory:#F5EFE6;
+  --muted:#B3A392;
+  --gold:#C9A876;
+  --gold-soft:#E4CFA6;
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ivory);font-family:var(--sans);font-weight:300;line-height:1.7;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:var(--gold);color:var(--bg)}
+
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.serif{font-family:var(--serif)}
+.eyebrow{display:inline-flex;align-items:center;gap:12px;font-size:12px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold);font-weight:400}
+.eyebrow::before{content:"";width:34px;height:1px;background:var(--gold);opacity:.6}
+h2.title{font-family:var(--serif);font-weight:500;font-size:clamp(34px,4.6vw,54px);line-height:1.12;margin:18px 0 20px;letter-spacing:.01em}
+h2.title em{font-style:italic;color:var(--gold-soft)}
+.lede{color:var(--muted);max-width:560px;font-size:17px}
+
+/* reveal animation */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .9s ease,transform .9s ease}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion: reduce){.rv{opacity:1;transform:none;transition:none}}
+
+/* ---------- NAV ---------- */
+nav{position:fixed;top:0;left:0;right:0;z-index:50;transition:background .4s ease,border-color .4s ease;border-bottom:1px solid transparent}
+nav.scrolled{background:rgba(14,11,9,.86);backdrop-filter:blur(14px);border-bottom-color:var(--line)}
+.nav-in{display:flex;align-items:center;justify-content:space-between;height:74px}
+.logo{font-family:var(--serif);font-size:24px;letter-spacing:.06em;color:var(--ivory)}
+.logo em{color:var(--gold);font-style:italic}
+.nav-links{display:flex;gap:34px;align-items:center;font-size:13px;letter-spacing:.18em;text-transform:uppercase}
+.nav-links a:not(.btn){color:var(--muted);transition:color .3s}
+.nav-links a:not(.btn):hover{color:var(--gold-soft)}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--gold);color:#141008;padding:13px 26px;border-radius:999px;font-weight:500;font-size:13px;letter-spacing:.14em;text-transform:uppercase;transition:transform .3s,box-shadow .3s;box-shadow:0 6px 24px rgba(201,168,118,.25)}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(201,168,118,.4)}
+.btn.ghost{background:transparent;color:var(--gold-soft);border:1px solid var(--line);box-shadow:none}
+.btn.ghost:hover{border-color:var(--gold);box-shadow:none}
+.menu-btn{display:none;background:none;border:0;color:var(--ivory);font-size:26px;cursor:pointer}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;isolation:isolate;padding:130px 0 90px}
+.hero-bg{position:absolute;inset:0;z-index:-2}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero::after{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(100deg,rgba(14,11,9,.94) 20%,rgba(14,11,9,.66) 55%,rgba(14,11,9,.35));}
+.hero-content{max-width:640px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(46px,7vw,84px);line-height:1.05;margin:22px 0 24px;letter-spacing:.005em}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero p{color:var(--muted);font-size:18px;max-width:480px;margin-bottom:38px}
+.hero-ctas{display:flex;gap:16px;flex-wrap:wrap;align-items:center}
+.gbadge{display:inline-flex;align-items:center;gap:10px;margin-top:44px;padding:12px 20px;border:1px solid var(--line);border-radius:999px;background:rgba(23,18,16,.6);backdrop-filter:blur(8px);font-size:14px;color:var(--ivory);transition:border-color .3s}
+.gbadge:hover{border-color:var(--gold)}
+.gbadge .stars{color:var(--gold);letter-spacing:2px;font-size:13px}
+.gbadge b{font-weight:500}
+.gbadge span.count{color:var(--muted)}
+
+/* ---------- MARQUEE ---------- */
+.marquee{border-top:1px solid var(--line);border-bottom:1px solid var(--line);overflow:hidden;padding:20px 0;background:var(--surface)}
+.marquee-track{display:flex;gap:0;width:max-content;animation:scroll 36s linear infinite}
+.marquee-track span{font-family:var(--serif);font-style:italic;font-size:20px;color:var(--muted);padding:0 28px;white-space:nowrap}
+.marquee-track span::after{content:"✦";color:var(--gold);margin-left:56px;font-style:normal;font-size:13px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion: reduce){.marquee-track{animation:none}}
+
+/* ---------- SIGNATURE ---------- */
+.section{padding:110px 0}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.frame{position:relative}
+.frame img{border-radius:2px;width:100%;height:560px;object-fit:cover}
+.frame::before{content:"";position:absolute;inset:-16px 16px 16px -16px;border:1px solid var(--line);border-radius:2px;z-index:-1}
+.sig-points{margin-top:34px;display:grid;gap:22px}
+.sig-point{display:flex;gap:18px;align-items:flex-start}
+.sig-point .n{font-family:var(--serif);font-style:italic;color:var(--gold);font-size:22px;line-height:1.3;min-width:34px}
+.sig-point h4{font-weight:500;font-size:16px;letter-spacing:.04em;margin-bottom:4px}
+.sig-point p{color:var(--muted);font-size:15px}
+
+/* ---------- SERVICES ---------- */
+.svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;margin-bottom:56px;flex-wrap:wrap}
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:2px;overflow:hidden;transition:transform .45s ease,border-color .45s ease;display:flex;flex-direction:column}
+.card:hover{transform:translateY(-6px);border-color:rgba(201,168,118,.4)}
+.card .im{height:230px;overflow:hidden}
+.card .im img{width:100%;height:100%;object-fit:cover;transition:transform .8s ease}
+.card:hover .im img{transform:scale(1.06)}
+.card .bd{padding:26px 26px 28px;display:flex;flex-direction:column;flex:1}
+.card h3{font-family:var(--serif);font-weight:500;font-size:24px;margin-bottom:10px}
+.card p{color:var(--muted);font-size:14.5px;flex:1}
+.card .cta{margin-top:20px;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);display:inline-flex;align-items:center;gap:8px}
+.card .cta::after{content:"→";transition:transform .3s}
+.card:hover .cta::after{transform:translateX(5px)}
+.tag{position:absolute;top:14px;left:14px;background:rgba(14,11,9,.82);backdrop-filter:blur(6px);color:var(--gold-soft);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;padding:6px 12px;border-radius:999px;border:1px solid var(--line)}
+
+/* ---------- REVIEWS ---------- */
+.rev-bg{background:var(--surface)}
+.rev-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px;margin-top:56px}
+.rev{background:var(--bg);border:1px solid var(--line);border-radius:2px;padding:30px;display:flex;flex-direction:column;gap:16px;transition:border-color .4s}
+.rev:hover{border-color:rgba(201,168,118,.4)}
+.rev .stars{color:var(--gold);letter-spacing:3px;font-size:13px}
+.rev p{color:var(--ivory);font-family:var(--serif);font-size:18.5px;line-height:1.55;font-style:italic;flex:1}
+.rev .who{color:var(--muted);font-size:13px;letter-spacing:.14em;text-transform:uppercase}
+.rev .who b{color:var(--gold-soft);font-weight:500}
+
+/* ---------- COURSE ---------- */
+.course{position:relative;overflow:hidden;border-radius:2px;border:1px solid var(--line)}
+.course img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:.22}
+.course-in{position:relative;padding:80px 60px;max-width:620px}
+
+/* ---------- VISIT ---------- */
+.visit-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:start}
+.info-list{display:grid;gap:0;margin-top:40px}
+.info{display:flex;gap:20px;padding:24px 0;border-top:1px solid var(--line);align-items:flex-start}
+.info:last-child{border-bottom:1px solid var(--line)}
+.info .ic{width:42px;height:42px;border:1px solid var(--line);border-radius:999px;display:flex;align-items:center;justify-content:center;color:var(--gold);flex-shrink:0}
+.info h4{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);font-weight:400;margin-bottom:6px}
+.info p, .info a.val{font-size:16.5px;color:var(--ivory)}
+.info a.val:hover{color:var(--gold-soft)}
+.hours-t{width:100%;font-size:15.5px}
+.hours-t td{padding:3px 0;color:var(--ivory)}
+.hours-t td:last-child{text-align:right;color:var(--muted)}
+.hours-t tr.today td{color:var(--gold-soft)}
+.map-card{border:1px solid var(--line);border-radius:2px;overflow:hidden}
+.map-card iframe{display:block;width:100%;height:420px;border:0;filter:grayscale(1) invert(.92) contrast(.9) hue-rotate(180deg)}
+.map-card .map-foot{padding:18px 22px;background:var(--surface);display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+.map-card .map-foot span{font-size:14px;color:var(--muted)}
+
+/* ---------- FOOTER ---------- */
+footer{border-top:1px solid var(--line);padding:54px 0 40px;background:var(--surface)}
+.foot-in{display:flex;justify-content:space-between;align-items:center;gap:26px;flex-wrap:wrap}
+.foot-in .small{color:var(--muted);font-size:13px}
+.foot-links{display:flex;gap:26px;align-items:center;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.foot-links a:hover{color:var(--gold-soft)}
+.credit{margin-top:28px;padding-top:22px;border-top:1px solid var(--line);color:#6f6355;font-size:12px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.credit a{color:#8a7b69;text-decoration:underline}
+
+/* floating WA */
+.wa-float{position:fixed;bottom:26px;right:26px;z-index:60;width:58px;height:58px;border-radius:999px;background:#25D366;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 28px rgba(0,0,0,.45);transition:transform .3s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;fill:#fff}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:920px){
+  .split,.visit-grid{grid-template-columns:1fr;gap:44px}
+  .svc-grid,.rev-grid{grid-template-columns:1fr 1fr}
+  .frame img{height:420px}
+  .course-in{padding:56px 30px}
+}
+@media (max-width:640px){
+  .nav-links{position:fixed;inset:74px 0 auto 0;background:rgba(14,11,9,.97);backdrop-filter:blur(16px);flex-direction:column;padding:30px 24px 36px;gap:24px;border-bottom:1px solid var(--line);transform:translateY(-130%);transition:transform .4s ease}
+  .nav-links.open{transform:none}
+  .menu-btn{display:block}
+  .svc-grid,.rev-grid{grid-template-columns:1fr}
+  .section{padding:80px 0}
+  .hero{padding-top:110px}
+  .map-card iframe{height:320px}
+}
+</style>
 </head>
-<body class="bg-white text-slate-900">
+<body>
 
-  <!-- Navbar -->
-  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-rose-100">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex items-center justify-between h-16">
-        <a href="#" class="text-xl font-bold tracking-tight text-rose-950">Lash Legacy SG</a>
-        <nav class="hidden md:flex items-center gap-8">
-          <a href="#services" class="text-sm font-medium text-slate-600 hover:text-rose-700 transition-colors">Services</a>
-          <a href="#about" class="text-sm font-medium text-slate-600 hover:text-rose-700 transition-colors">About</a>
-          <a href="#gallery" class="text-sm font-medium text-slate-600 hover:text-rose-700 transition-colors">Gallery</a>
-          <a href="#contact" class="text-sm font-medium text-slate-600 hover:text-rose-700 transition-colors">Contact</a>
-          <a href="https://www.instagram.com/lashlegacysg/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-white bg-rose-600 hover:bg-rose-700 px-4 py-2 rounded-full transition-colors">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-            Book Now
-          </a>
-        </nav>
-        <button id="menu-btn" class="md:hidden p-2 text-slate-600" aria-label="Toggle menu">
-          <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" x2="20" y1="6" y2="6"/><line x1="4" x2="20" y1="12" y2="12"/><line x1="4" x2="20" y1="18" y2="18"/></svg>
-        </button>
-      </div>
+<!-- NAV -->
+<nav id="nav">
+  <div class="wrap nav-in">
+    <a href="#" class="logo">Lash <em>Legacy</em></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#signature">Signature</a>
+      <a href="#services">Services</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#visit">Visit</a>
+      <a class="btn" href="https://wa.me/6583121248?text=Hi%20Lash%20Legacy!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noreferrer">Book Now</a>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-rose-100 bg-white">
-      <div class="px-4 py-4 space-y-3">
-        <a href="#services" class="block text-base font-medium text-slate-700 hover:text-rose-700">Services</a>
-        <a href="#about" class="block text-base font-medium text-slate-700 hover:text-rose-700">About</a>
-        <a href="#gallery" class="block text-base font-medium text-slate-700 hover:text-rose-700">Gallery</a>
-        <a href="#contact" class="block text-base font-medium text-slate-700 hover:text-rose-700">Contact</a>
-        <a href="https://www.instagram.com/lashlegacysg/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-sm font-semibold text-white bg-rose-600 hover:bg-rose-700 px-4 py-2 rounded-full transition-colors">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-          Book on Instagram
-        </a>
-      </div>
-    </div>
-  </header>
+  </div>
+</nav>
 
-  <!-- Hero -->
-  <section class="relative overflow-hidden bg-rose-50">
-    <div class="absolute inset-0 opacity-10 pointer-events-none">
-      <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-rose-300 blur-3xl"></div>
-      <div class="absolute top-1/2 -left-24 w-72 h-72 rounded-full bg-rose-200 blur-3xl"></div>
-    </div>
-    <div class="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 md:py-28">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="space-y-8">
-          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-rose-100 text-rose-800 text-sm font-medium">
-            <span class="relative flex h-2 w-2">
-              <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-500 opacity-75"></span>
-              <span class="relative inline-flex rounded-full h-2 w-2 bg-rose-600"></span>
-            </span>
-            Now accepting appointments in Singapore
-          </div>
-          <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-rose-950 leading-[1.1]">Wake up with lashes you'll love.</h1>
-          <p class="text-lg md:text-xl text-slate-700 max-w-lg">Lash Legacy SG is a Singapore lash &amp; brow studio crafting lightweight, eye-opening extensions, lifts, and brow shapes tailored to you.</p>
-          <div class="flex flex-wrap gap-4">
-            <a href="https://www.instagram.com/lashlegacysg/" target="_blank" rel="noreferrer" class="inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white font-semibold px-6 py-3 rounded-full transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-              Book on Instagram
-            </a>
-            <a href="#services" class="inline-flex items-center justify-center gap-2 bg-white hover:bg-rose-50 text-rose-700 border border-rose-200 font-semibold px-6 py-3 rounded-full transition-colors">Explore Services</a>
-          </div>
-          <p class="text-sm text-slate-500">Follow us on Instagram: <a href="https://www.instagram.com/lashlegacysg/" target="_blank" rel="noreferrer" class="text-rose-700 hover:underline font-medium">@lashlegacysg</a></p>
-        </div>
-        <div class="relative">
-          <div class="aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl shadow-rose-900/10 border border-rose-100">
-            <img src="https://images.unsplash.com/photo-1583001809873-a128495da465?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Elegant eyelash extension close-up" class="w-full h-full object-cover">
-          </div>
-          <div class="absolute -bottom-6 -left-6 bg-white rounded-2xl shadow-xl p-5 border border-rose-100 hidden md:block">
-            <p class="text-sm font-medium text-slate-500">Trusted by clients across Singapore</p>
-            <p class="text-2xl font-bold text-rose-700">500+ sets done</p>
-          </div>
-        </div>
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-bg"><img src="https://images.unsplash.com/photo-1605777085122-94f4938cbfb0?auto=format&fit=crop&w=1800&q=80" alt="Close-up of a woman's face with beautiful long eyelashes, eyes closed" fetchpriority="high"></div>
+  <div class="wrap">
+    <div class="hero-content">
+      <span class="eyebrow">Tanjong Pagar · Singapore</span>
+      <h1>Lashes designed<br>to <em>fit you.</em></h1>
+      <p>Multi-layered lash design tailored to your eye shape, natural lashes and lifestyle — by the studio Tanjong Pagar trusts.</p>
+      <div class="hero-ctas">
+        <a class="btn" href="https://wa.me/6583121248?text=Hi%20Lash%20Legacy!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noreferrer">Book via WhatsApp</a>
+        <a class="btn ghost" href="#services">Explore Services</a>
       </div>
+      <a class="gbadge" href="https://www.google.com/maps/place/Lash+Legacy/@1.2756998,103.8458098,17z" target="_blank" rel="noreferrer" aria-label="Read our Google reviews">
+        <span class="stars">★★★★★</span>
+        <b>4.9 on Google</b>
+        <span class="count">· 53 reviews</span>
+      </a>
     </div>
-  </section>
+  </div>
+</header>
 
-  <!-- Services -->
-  <section id="services" class="py-20 md:py-28 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
-        <span class="inline-flex items-center gap-2 text-rose-700 font-semibold text-sm uppercase tracking-wide">
-          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .962 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .962L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.962 0z"/></svg>
-          Our Services
-        </span>
-        <h2 class="mt-3 text-3xl md:text-4xl font-bold text-rose-950">Lashes &amp; brows, perfected.</h2>
-        <p class="mt-4 text-slate-600">Every service begins with a short consultation so we choose the right style, curl, and length for your features.</p>
-      </div>
-      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-        <div class="group p-6 rounded-2xl border border-rose-100 bg-rose-50/50 hover:bg-rose-50 transition-colors">
-          <h3 class="text-lg font-bold text-rose-950 group-hover:text-rose-700 transition-colors">Classic Eyelash Extensions</h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">One extension per natural lash for a soft, everyday look — lightweight, natural, and easy to maintain.</p>
-          <p class="mt-4 text-sm font-semibold text-rose-700">Enquire for price</p>
+<!-- MARQUEE -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <span>Multi-Layered Lash Design</span><span>Classic Extensions</span><span>Volume Lashes</span><span>Lash Lift</span><span>Lower Lashes</span><span>Baby Lips</span><span>Lash Artistry Courses</span>
+    <span>Multi-Layered Lash Design</span><span>Classic Extensions</span><span>Volume Lashes</span><span>Lash Lift</span><span>Lower Lashes</span><span>Baby Lips</span><span>Lash Artistry Courses</span>
+  </div>
+</div>
+
+<!-- SIGNATURE -->
+<section class="section" id="signature">
+  <div class="wrap split">
+    <div class="frame rv">
+      <img src="https://images.unsplash.com/photo-1674049406467-824ea37c7184?auto=format&fit=crop&w=900&q=80" alt="Lash artist applying eyelash extensions with tweezers" loading="lazy">
+    </div>
+    <div class="rv">
+      <span class="eyebrow">Our Signature</span>
+      <h2 class="title">Multi-layered <em>lash design</em></h2>
+      <p class="lede">No two eyes are the same — so no two sets should be either. We map your eye shape, lash condition and daily style, then build your set in layers for depth that looks born, not built.</p>
+      <div class="sig-points">
+        <div class="sig-point">
+          <span class="n">01</span>
+          <div><h4>Design consultation, every visit</h4><p>We advise what flatters your face and features before a single lash is placed.</p></div>
         </div>
-        <div class="group p-6 rounded-2xl border border-rose-100 bg-rose-50/50 hover:bg-rose-50 transition-colors">
-          <h3 class="text-lg font-bold text-rose-950 group-hover:text-rose-700 transition-colors">Hybrid Lash Extensions</h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">A mix of classic and volume fans for subtle fullness and texture with a soft, fluffy finish.</p>
-          <p class="mt-4 text-sm font-semibold text-rose-700">Enquire for price</p>
+        <div class="sig-point">
+          <span class="n">02</span>
+          <div><h4>Gentle on your natural lashes</h4><p>Lash-safe isolation and lightweight fans — your own lashes stay healthy and intact.</p></div>
         </div>
-        <div class="group p-6 rounded-2xl border border-rose-100 bg-rose-50/50 hover:bg-rose-50 transition-colors">
-          <h3 class="text-lg font-bold text-rose-950 group-hover:text-rose-700 transition-colors">Volume Lash Extensions</h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Ultra-light handmade fans for a bold, glamorous, full-lash look without weighing down naturals.</p>
-          <p class="mt-4 text-sm font-semibold text-rose-700">Enquire for price</p>
-        </div>
-        <div class="group p-6 rounded-2xl border border-rose-100 bg-rose-50/50 hover:bg-rose-50 transition-colors">
-          <h3 class="text-lg font-bold text-rose-950 group-hover:text-rose-700 transition-colors">Lash Lift &amp; Tint</h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Lift and darken your natural lashes for a wide-awake, mascara-free look that lasts weeks.</p>
-          <p class="mt-4 text-sm font-semibold text-rose-700">Enquire for price</p>
-        </div>
-        <div class="group p-6 rounded-2xl border border-rose-100 bg-rose-50/50 hover:bg-rose-50 transition-colors">
-          <h3 class="text-lg font-bold text-rose-950 group-hover:text-rose-700 transition-colors">Brow Lamination</h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Restructure and set brow hairs into a fuller, lifted shape — the soap-brow effect made effortless.</p>
-          <p class="mt-4 text-sm font-semibold text-rose-700">Enquire for price</p>
-        </div>
-        <div class="group p-6 rounded-2xl border border-rose-100 bg-rose-50/50 hover:bg-rose-50 transition-colors">
-          <h3 class="text-lg font-bold text-rose-950 group-hover:text-rose-700 transition-colors">Brow Shaping &amp; Tint</h3>
-          <p class="mt-3 text-slate-600 text-sm leading-relaxed">Wax or thread shaping plus custom tinting to define your brows and frame your face.</p>
-          <p class="mt-4 text-sm font-semibold text-rose-700">Enquire for price</p>
+        <div class="sig-point">
+          <span class="n">03</span>
+          <div><h4>Rest while we work</h4><p>Settle into our plush sofa beds. Most guests fall asleep — we take it as a compliment.</p></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- About -->
-  <section id="about" class="py-20 md:py-28 bg-rose-50">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12 items-center">
-        <div class="order-2 md:order-1">
-          <div class="aspect-[4/3] rounded-3xl overflow-hidden shadow-xl shadow-rose-900/10 border border-rose-100">
-            <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&amp;fit=crop&amp;w=1200&amp;q=80" alt="Lash artist at work in a clean studio" class="w-full h-full object-cover">
-          </div>
+<!-- SERVICES -->
+<section class="section" id="services" style="padding-top:40px">
+  <div class="wrap">
+    <div class="svc-head rv">
+      <div>
+        <span class="eyebrow">The Menu</span>
+        <h2 class="title" style="margin-bottom:0">Lashes, lifted &amp; <em>perfected</em></h2>
+      </div>
+      <p class="lede" style="max-width:380px">Every appointment begins with a short consultation, so your set is chosen for your eyes — not off a shelf.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="card rv" style="position:relative">
+        <span class="tag">Signature</span>
+        <div class="im"><img src="https://images.unsplash.com/photo-1639629509821-c54cdd984227?auto=format&fit=crop&w=700&q=80" alt="Customised multi-layered eyelash extension set" loading="lazy"></div>
+        <div class="bd">
+          <h3>Customised Lash Design</h3>
+          <p>Our signature multi-layered sets — depth, texture and direction mapped to your eye shape for a look that's unmistakably yours.</p>
+          <a class="cta" href="https://wa.me/6583121248?text=Hi!%20I%27d%20like%20to%20enquire%20about%20Customised%20Lash%20Design." target="_blank" rel="noreferrer">Enquire</a>
         </div>
-        <div class="order-1 md:order-2 space-y-6">
-          <h2 class="text-3xl md:text-4xl font-bold text-rose-950">Lashes that last. Brows that frame.</h2>
-          <p class="text-slate-700 leading-relaxed">Lash Legacy SG is a Singapore beauty studio dedicated to effortless, eye-opening lashes and perfectly sculpted brows. Every set is tailored to your eye shape, lifestyle, and personal style — so you wake up looking polished, every single day.</p>
-          <p class="text-slate-700 leading-relaxed">We use premium adhesives and products, work in a clean, relaxing space, and never rush the detail. Whether it's your first set or your fiftieth, we design a look that feels like you.</p>
-          <ul class="grid grid-cols-2 gap-4 pt-4">
-            <li class="flex items-center gap-2 text-sm font-medium text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>Premium adhesives</li>
-            <li class="flex items-center gap-2 text-sm font-medium text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>Custom lash mapping</li>
-            <li class="flex items-center gap-2 text-sm font-medium text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>Relaxing private room</li>
-            <li class="flex items-center gap-2 text-sm font-medium text-slate-700"><span class="w-1.5 h-1.5 rounded-full bg-rose-500"></span>Strict hygiene standards</li>
-          </ul>
+      </div>
+      <div class="card rv">
+        <div class="im"><img src="https://images.unsplash.com/photo-1635288897017-b18975ab3ee1?auto=format&fit=crop&w=700&q=80" alt="Natural classic eyelash extensions close-up" loading="lazy"></div>
+        <div class="bd">
+          <h3>Classic Extensions</h3>
+          <p>One extension per natural lash. Soft, feathery and effortless — the everyday set that still turns heads.</p>
+          <a class="cta" href="https://wa.me/6583121248?text=Hi!%20I%27d%20like%20to%20enquire%20about%20Classic%20Lash%20Extensions." target="_blank" rel="noreferrer">Enquire</a>
+        </div>
+      </div>
+      <div class="card rv">
+        <div class="im"><img src="https://images.unsplash.com/photo-1561453046-b951b726cf52?auto=format&fit=crop&w=700&q=80" alt="Dramatic volume eyelash extensions macro shot" loading="lazy"></div>
+        <div class="bd">
+          <h3>Volume Lashes</h3>
+          <p>Ultra-light handmade fans for fullness and drama — bold in the mirror, weightless on your lashes.</p>
+          <a class="cta" href="https://wa.me/6583121248?text=Hi!%20I%27d%20like%20to%20enquire%20about%20Volume%20Lashes." target="_blank" rel="noreferrer">Enquire</a>
+        </div>
+      </div>
+      <div class="card rv">
+        <div class="im"><img src="https://images.unsplash.com/photo-1548902378-2ec44c906391?auto=format&fit=crop&w=700&q=80" alt="Lifted and curled natural lashes after a lash lift" loading="lazy"></div>
+        <div class="bd">
+          <h3>Lash Lift</h3>
+          <p>Your own lashes, lifted and set for weeks of wide-awake curl — zero extensions, zero mascara needed.</p>
+          <a class="cta" href="https://wa.me/6583121248?text=Hi!%20I%27d%20like%20to%20enquire%20about%20a%20Lash%20Lift." target="_blank" rel="noreferrer">Enquire</a>
+        </div>
+      </div>
+      <div class="card rv">
+        <div class="im"><img src="https://images.unsplash.com/photo-1617860341246-17da09af3b1c?auto=format&fit=crop&w=700&q=80" alt="Detailed lower lash extensions in monochrome" loading="lazy"></div>
+        <div class="bd">
+          <h3>Lower Lashes</h3>
+          <p>The finishing touch few studios offer — delicate lower-lash work that completes and balances your look.</p>
+          <a class="cta" href="https://wa.me/6583121248?text=Hi!%20I%27d%20like%20to%20enquire%20about%20Lower%20Lash%20Extensions." target="_blank" rel="noreferrer">Enquire</a>
+        </div>
+      </div>
+      <div class="card rv">
+        <div class="im"><img src="https://images.unsplash.com/photo-1654374504608-67c4cfe65fca?auto=format&fit=crop&w=700&q=80" alt="Soft natural lip colour after baby lips embroidery" loading="lazy"></div>
+        <div class="bd">
+          <h3>Baby Lips</h3>
+          <p>Semi-permanent lip embroidery for a soft, healthy flush of colour — wake up with your lips, but better.</p>
+          <a class="cta" href="https://wa.me/6583121248?text=Hi!%20I%27d%20like%20to%20enquire%20about%20Baby%20Lips." target="_blank" rel="noreferrer">Enquire</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Gallery -->
-  <section id="gallery" class="py-20 md:py-28 bg-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-12">
-        <h2 class="text-3xl md:text-4xl font-bold text-rose-950">Our Work</h2>
-        <p class="mt-4 text-slate-600">A glimpse of the lashes and brows we create for clients across Singapore.</p>
+<!-- REVIEWS -->
+<section class="section rev-bg" id="reviews">
+  <div class="wrap">
+    <div class="rv" style="text-align:center;max-width:640px;margin:0 auto">
+      <span class="eyebrow" style="justify-content:center">Client Love</span>
+      <h2 class="title">Rated <em>4.9 of 5</em> on Google</h2>
+      <p class="lede" style="margin:0 auto">Real words from the 53 clients who've reviewed us — unedited, straight from our <a href="https://www.google.com/maps/place/Lash+Legacy/@1.2756998,103.8458098,17z" target="_blank" rel="noreferrer" style="color:var(--gold-soft);text-decoration:underline">Google listing</a>.</p>
+    </div>
+    <div class="rev-grid">
+      <div class="rev rv">
+        <span class="stars">★★★★★</span>
+        <p>"Extremely nice lash technicians — they advise on what looks best according to face type and are very gentle. The sets are very long lasting!"</p>
+        <span class="who"><b>Nayanika B.</b> · Google review</span>
       </div>
-      <div class="grid md:grid-cols-3 gap-6">
-        <div class="aspect-square rounded-2xl overflow-hidden border border-rose-100 shadow-sm">
-          <img src="https://images.unsplash.com/photo-1596704017254-9b121068fb31?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Close-up of eyelash extension set" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+      <div class="rev rv">
+        <span class="stars">★★★★★</span>
+        <p>"Your natural lashes will remain intact while you enjoy beautiful extensions. Highly recommended — this place won't disappoint you."</p>
+        <span class="who"><b>Ley Kun L.</b> · Google review</span>
+      </div>
+      <div class="rev rv">
+        <span class="stars">★★★★★</span>
+        <p>"Been coming for a year. They do unique lash designs and even lower lashes. Well recommended if you want more versatility."</p>
+        <span class="who"><b>Celeste L.</b> · Google review</span>
+      </div>
+      <div class="rev rv">
+        <span class="stars">★★★★★</span>
+        <p>"I absolutely loved my lash experience here! Exceptional from start to finish — professional, attentive, and I felt comfortable throughout."</p>
+        <span class="who"><b>Michelle T.</b> · Google review</span>
+      </div>
+      <div class="rev rv">
+        <span class="stars">★★★★★</span>
+        <p>"The sofa bed is so good I can lie down and have a good sleep. And the eyelashes — perfect."</p>
+        <span class="who"><b>Hongyuan L.</b> · Google review</span>
+      </div>
+      <div class="rev rv">
+        <span class="stars">★★★★★</span>
+        <p>"I got my lips embroidered here and it was a good experience! I was worried the colour might turn out too red or pink, but it came out just right."</p>
+        <span class="who"><b>Meredith M.</b> · Google review</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE -->
+<section class="section">
+  <div class="wrap">
+    <div class="course rv">
+      <img src="https://images.unsplash.com/photo-1674049406179-d7bf2c263e71?auto=format&fit=crop&w=1400&q=70" alt="" aria-hidden="true" loading="lazy">
+      <div class="course-in">
+        <span class="eyebrow">Lash Legacy Academy</span>
+        <h2 class="title" style="font-size:clamp(30px,3.6vw,44px)">Learn the craft <em>from us</em></h2>
+        <p class="lede" style="margin-bottom:30px">Dreaming of becoming a lash artist? We run hands-on lash courses at our Tanjong Pagar studio — small groups, real technique, taught by working artists.</p>
+        <a class="btn ghost" href="https://wa.me/6583121248?text=Hi!%20I%27m%20interested%20in%20your%20lash%20course." target="_blank" rel="noreferrer">Ask About Courses</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISIT -->
+<section class="section" id="visit" style="padding-top:20px">
+  <div class="wrap visit-grid">
+    <div class="rv">
+      <span class="eyebrow">Visit Us</span>
+      <h2 class="title">Two minutes from <em>Tanjong Pagar MRT</em></h2>
+      <p class="lede">Find us on level 2 of International Plaza — directly above Tanjong Pagar MRT (EW15). Walk-ins welcome when slots allow; booking ahead is best.</p>
+      <div class="info-list">
+        <div class="info">
+          <span class="ic">✦</span>
+          <div>
+            <h4>Address</h4>
+            <a class="val" href="https://www.google.com/maps/place/Lash+Legacy/@1.2756998,103.8458098,17z" target="_blank" rel="noreferrer">10 Anson Road, #02-74 International Plaza,<br>Singapore 079903</a>
+          </div>
         </div>
-        <div class="aspect-square rounded-2xl overflow-hidden border border-rose-100 shadow-sm">
-          <img src="https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Styled brows after lamination and tint" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        <div class="info">
+          <span class="ic">✆</span>
+          <div>
+            <h4>Phone / WhatsApp</h4>
+            <a class="val" href="https://wa.me/6583121248" target="_blank" rel="noreferrer">+65 8312 1248</a>
+          </div>
         </div>
-        <div class="aspect-square rounded-2xl overflow-hidden border border-rose-100 shadow-sm">
-          <img src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?auto=format&amp;fit=crop&amp;w=800&amp;q=80" alt="Clean modern lash studio interior" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500">
+        <div class="info">
+          <span class="ic">◷</span>
+          <div style="flex:1">
+            <h4>Opening Hours</h4>
+            <table class="hours-t"><tbody>
+              <tr data-d="1"><td>Monday – Friday</td><td>11:00 am – 9:00 pm</td></tr>
+              <tr data-d="6"><td>Saturday</td><td>10:00 am – 7:00 pm</td></tr>
+              <tr data-d="0"><td>Sunday</td><td>Closed</td></tr>
+            </tbody></table>
+          </div>
+        </div>
+        <div class="info">
+          <span class="ic">✧</span>
+          <div>
+            <h4>Instagram</h4>
+            <a class="val" href="https://www.instagram.com/lashlegacysg/" target="_blank" rel="noreferrer">@lashlegacysg</a>
+          </div>
         </div>
       </div>
     </div>
-  </section>
-
-  <!-- Contact -->
-  <section id="contact" class="py-20 md:py-28 bg-rose-950 text-white">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid md:grid-cols-2 gap-12">
-        <div class="space-y-6">
-          <h2 class="text-3xl md:text-4xl font-bold">Ready to book?</h2>
-          <p class="text-rose-100 leading-relaxed">DM us on Instagram or WhatsApp to book your appointment. We'll confirm your slot and send pre-care instructions so you get the most from your visit.</p>
-          <div class="flex flex-wrap gap-3">
-            <a href="https://wa.me/6583121248" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 bg-white text-rose-950 hover:bg-rose-50 font-semibold px-6 py-3 rounded-full transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-              WhatsApp us
-            </a>
-            <a href="https://www.instagram.com/lashlegacysg/" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 bg-rose-900/60 text-white hover:bg-rose-900 font-semibold px-6 py-3 rounded-full transition-colors">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-              DM @lashlegacysg
-            </a>
-          </div>
-        </div>
-        <div class="space-y-6">
-          <div class="flex items-start gap-4">
-            <div class="p-3 rounded-xl bg-rose-900/50">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-300"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-            </div>
-            <div>
-              <p class="font-semibold">Location</p>
-              <a href="https://maps.google.com/?q=International+Plaza+10+Anson+Road+Singapore+079903" target="_blank" rel="noreferrer" class="text-rose-100 text-sm hover:text-white transition-colors">10 Anson Road, #02-74<br>International Plaza, Singapore 079903</a>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="p-3 rounded-xl bg-rose-900/50">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-300"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-            </div>
-            <div>
-              <p class="font-semibold">Opening Hours</p>
-              <p class="text-rose-100 text-sm">Mon – Fri: 11:00 AM – 9:00 PM</p>
-              <p class="text-rose-100 text-sm">Sat: 10:00 AM – 7:00 PM</p>
-              <p class="text-rose-100 text-sm">Sun: Closed</p>
-            </div>
-          </div>
-          <div class="flex items-start gap-4">
-            <div class="p-3 rounded-xl bg-rose-900/50">
-              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-300"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            </div>
-            <div>
-              <p class="font-semibold">Phone / WhatsApp</p>
-              <a href="https://wa.me/6583121248" target="_blank" rel="noreferrer" class="text-rose-100 text-sm hover:text-white transition-colors">+65 8312 1248</a>
-            </div>
-          </div>
+    <div class="rv">
+      <div class="map-card">
+        <iframe title="Map to Lash Legacy, International Plaza" src="https://www.google.com/maps?q=Lash+Legacy,+10+Anson+Road,+International+Plaza,+Singapore+079903&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="map-foot">
+          <span>International Plaza, #02-74</span>
+          <a class="btn ghost" style="padding:10px 20px" href="https://www.google.com/maps/dir/?api=1&destination=Lash+Legacy+10+Anson+Road+Singapore+079903" target="_blank" rel="noreferrer">Directions</a>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- Footer -->
-  <footer class="bg-white border-t border-rose-100 py-10">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="flex flex-col md:flex-row items-center justify-between gap-6">
-        <div class="text-center md:text-left">
-          <p class="text-lg font-bold text-rose-950">Lash Legacy SG</p>
-          <p class="text-sm text-slate-500">Premium Lash &amp; Brow Studio · Singapore</p>
-        </div>
-        <a href="https://www.instagram.com/lashlegacysg/" target="_blank" rel="noreferrer" class="text-slate-500 hover:text-rose-700 transition-colors" aria-label="Instagram">
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg>
-        </a>
-      </div>
-      <div class="mt-8 pt-8 border-t border-rose-100 flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-slate-500">
-        <p class="flex items-center gap-1">© 2026 Lash Legacy SG. Made with <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="text-rose-500"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/></svg> in Singapore.</p>
-        <p>Photos via <a href="https://unsplash.com" target="_blank" rel="noreferrer" class="text-rose-700 hover:underline">Unsplash</a>. Booking via Instagram DM.</p>
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-in">
+      <a href="#" class="logo">Lash <em>Legacy</em></a>
+      <div class="foot-links">
+        <a href="#services">Services</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#visit">Visit</a>
+        <a href="https://www.instagram.com/lashlegacysg/" target="_blank" rel="noreferrer">Instagram</a>
       </div>
     </div>
-  </footer>
+    <div class="credit">
+      <span>© 2026 Lash Legacy · Tanjong Pagar, Singapore</span>
+      <span>Photography via <a href="https://unsplash.com" target="_blank" rel="noreferrer">Unsplash</a> · Reviews from <a href="https://www.google.com/maps/place/Lash+Legacy/@1.2756998,103.8458098,17z" target="_blank" rel="noreferrer">Google</a></span>
+    </div>
+  </div>
+</footer>
 
-  <script>
-    const btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('mobile-menu');
-    const icon = document.getElementById('menu-icon');
-    btn.addEventListener('click', () => {
-      menu.classList.toggle('hidden');
-      const isOpen = !menu.classList.contains('hidden');
-      icon.innerHTML = isOpen
-        ? '<line x1="18" x2="6" y1="6" y2="18"></line><line x1="6" x2="18" y1="6" y2="18"></line>'
-        : '<line x1="4" x2="20" y1="6" y2="6"></line><line x1="4" x2="20" y1="12" y2="12"></line><line x1="4" x2="20" y1="18" y2="18"></line>';
-    });
-  </script>
+<!-- Floating WhatsApp -->
+<a class="wa-float" href="https://wa.me/6583121248?text=Hi%20Lash%20Legacy!%20I%27d%20like%20to%20book%20an%20appointment." target="_blank" rel="noreferrer" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M17.5 14.4c-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.65.07-.3-.15-1.26-.46-2.4-1.48-.88-.79-1.48-1.76-1.65-2.06-.17-.3-.02-.46.13-.61.13-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.08-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.5 0 1.47 1.07 2.9 1.22 3.1.15.2 2.1 3.2 5.1 4.49.71.3 1.27.49 1.7.63.72.23 1.37.2 1.88.12.58-.09 1.76-.72 2.01-1.42.25-.7.25-1.29.17-1.42-.07-.13-.27-.2-.57-.35M12.05 21.79h-.01a9.87 9.87 0 0 1-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 0 1-1.51-5.26c0-5.45 4.44-9.88 9.9-9.88a9.83 9.83 0 0 1 7 2.9 9.83 9.83 0 0 1 2.89 7c0 5.45-4.44 9.88-9.9 9.88m8.42-18.3A11.82 11.82 0 0 0 12.05 0C5.5 0 .17 5.33.17 11.89c0 2.1.55 4.14 1.59 5.94L.07 24l6.32-1.66a11.88 11.88 0 0 0 5.66 1.44h.01c6.55 0 11.88-5.33 11.88-11.88 0-3.18-1.24-6.16-3.47-8.4"/></svg>
+</a>
+
+<script>
+// nav scroll state
+const nav = document.getElementById('nav');
+addEventListener('scroll', () => nav.classList.toggle('scrolled', scrollY > 40), {passive:true});
+// mobile menu
+const links = document.getElementById('navLinks');
+document.getElementById('menuBtn').addEventListener('click', () => links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
+// reveal on scroll
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {threshold:.12});
+document.querySelectorAll('.rv').forEach(el => io.observe(el));
+// highlight today's hours row
+const d = new Date().getDay();
+document.querySelectorAll('.hours-t tr').forEach(tr => {
+  const dd = tr.dataset.d;
+  if ((dd === '1' && d >= 1 && d <= 5) || dd == d) tr.classList.add('today');
+});
+</script>
 </body>
 </html>

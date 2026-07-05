@@ -1,6 +1,9 @@
+// NOTE: public/index.html (mirrored to repo-root index.html) is the CANONICAL live site
+// as of the 2026-07-05 revamp. This data file backs the (currently unused) Next.js version;
+// keep it aligned with the static page when updating content.
 export const salonData = {
-  name: "Lash Legacy SG",
-  tagline: "Premium Lash & Brow Studio",
+  name: "Lash Legacy",
+  tagline: "Lash Extensions Designed to Fit You",
   instagram: "https://www.instagram.com/lashlegacysg/",
   instagramHandle: "@lashlegacysg",
   phone: "+65 8312 1248",
@@ -24,40 +27,40 @@ export const salonData = {
   },
   services: [
     {
-      title: "Classic Eyelash Extensions",
+      title: "Customised Lash Design",
       description:
-        "One extension per natural lash for a soft, everyday look — lightweight, natural, and easy to maintain.",
-      price: "Enquire for price",
+        "Our signature multi-layered sets — depth, texture and direction mapped to your eye shape for a look that's unmistakably yours.",
+      price: "Enquire via WhatsApp",
     },
     {
-      title: "Hybrid Lash Extensions",
+      title: "Classic Extensions",
       description:
-        "A mix of classic and volume fans for subtle fullness and texture with a soft, fluffy finish.",
-      price: "Enquire for price",
+        "One extension per natural lash. Soft, feathery and effortless — the everyday set that still turns heads.",
+      price: "Enquire via WhatsApp",
     },
     {
-      title: "Volume Lash Extensions",
+      title: "Volume Lashes",
       description:
-        "Ultra-light handmade fans for a bold, glamorous, full-lash look without weighing down naturals.",
-      price: "Enquire for price",
+        "Ultra-light handmade fans for fullness and drama — bold in the mirror, weightless on your lashes.",
+      price: "Enquire via WhatsApp",
     },
     {
-      title: "Lash Lift & Tint",
+      title: "Lash Lift",
       description:
-        "Lift and darken your natural lashes for a wide-awake, mascara-free look that lasts weeks.",
-      price: "Enquire for price",
+        "Your own lashes, lifted and set for weeks of wide-awake curl — zero extensions, zero mascara needed.",
+      price: "Enquire via WhatsApp",
     },
     {
-      title: "Brow Lamination",
+      title: "Lower Lashes",
       description:
-        "Restructure and set brow hairs into a fuller, lifted shape — the soap-brow effect made effortless.",
-      price: "Enquire for price",
+        "The finishing touch few studios offer — delicate lower-lash work that completes and balances your look.",
+      price: "Enquire via WhatsApp",
     },
     {
-      title: "Brow Shaping & Tint",
+      title: "Baby Lips",
       description:
-        "Wax or thread shaping plus custom tinting to define your brows and frame your face.",
-      price: "Enquire for price",
+        "Semi-permanent lip embroidery for a soft, healthy flush of colour — wake up with your lips, but better.",
+      price: "Enquire via WhatsApp",
     },
   ],
   gallery: [
